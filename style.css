@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,900;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-gray: #636c79;
+    --light-green: #8bb7a2;
+    --bg-dark: #10181d;
+    --white: #FFFFFF;
+    --white-dim: #cccccc;
+    --text-gray: #8c8c8c;
+    --text-dark-gray: #424242;
+    --text-dark: #1b1d21;
+}
+
+body {
+    background-color: var(--bg-gray);
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+    border: none;
+    font-weight: 600;
+    padding: 10px 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-outline {
+    border: 1px solid var(--light-green);
+    background-color: transparent;
+}
+
+.btn-fill {
+    background-color: var(--light-green);
+}
+
+.btn-lg {
+    padding: 18px 20px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 78rem;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+    align-items: center;
+}
+
+.navbar .logo-container {
+    flex: 2;
+}
+
+.navbar .logo-container img {
+    width: 110px;
+}
+
+.navbar .list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex: 2.4;
+    padding-bottom: 30px;
+}
+
+.navbar .list .list-item a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.navbar div:last-child {
+    margin-bottom: 30px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    height: 85vh;
+    padding-bottom: 20px;
+}
+
+.hero-left .hero-image {
+    width: 28rem;
+    height: 580px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-left .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .hero-right h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4.4rem;
+    color: var(--white);
+    line-height: 75px;
+}
+
+.hero .hero-right p {
+    color: var(--white-dim);
+    margin-top: 40px;
+    line-height: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.hero .hero-right .contact-email {
+    position: relative;
+}
+
+.hero .hero-right .contact-email input[type="email"] {
+    padding: 28px 190px 28px 20px;
+    width: 23rem;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero .hero-right .contact-email input[type="email"]::placeholder {
+    font-size: 16px;
+    color: var(--text-gray);
+}
+
+.hero .hero-right .contact-email button {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+
+.connecting-wrapper {
+    background-color: var(--white);
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.connecting {
+    max-width: 78rem;
+    margin: 110px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connecting h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.6rem;
+    text-align: center;
+    color: var(--text-dark);
+    padding-bottom: 60px;
+}
+
+.connecting .connecting-right .connecting-img {
+    width: 78rem;
+    height: 550px;
+    overflow: hidden;
+}
+
+.connecting .connecting-right .connecting-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.connecting .connecting-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.connecting .connecting-left .connecting-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.connecting .connecting-left .connecting-stats .stat h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: red;
+}
+
+.connecting .connecting-left .connecting-stats .stat p {
+    font-weight: 600;
+    color: var(--text-dark-gray);
+    padding-top: 10px;
+    padding-bottom: 60px;
+    font-size: 17px;
+}
+
+.care-container {
+    background-color: var(--white);
+    margin-top: 60rem;
+    text-align: center;
+}
+
+.care-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 10rem;
+    margin: 5rem 10rem;
+}
+
+.care-title {
+    width: 500px;
+    margin: auto;
+}
+
+.description {
+    margin: 2rem auto;
+    color: #6a7681;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.hero-btn {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    background: rgb(76, 148, 117);
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.img img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+.card2 {
+    flex-direction: row-reverse;
+}
+
+.team-container {
+    background-color: var(--white);
+    margin-top: -5rem;
+    text-align: center;
+}
+
+.team-top {
+    margin: 4rem 10rem;
+    display: flex;
+    gap: 20rem;
+    text-align: left;
+}
+
+.team-card-container {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 4rem;
+}
+
+.team-card {
+    width: 400px;
+}
+
+.team-description {
+    line-height: 30px;
+}
+
+.team-card img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.seemore-btn {
+    margin-top: 3rem;
+    color: #fff;
+    margin-bottom: 7rem;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    background: rgb(76, 148, 117);
+    border: none;
+}
+
+footer {
+    background-color: #0c1622;
+    color: #fff;
+    padding: 0 12rem;
+}
+
+.footer-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.393);
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    align-items: center;
+}
+
+.footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-item {
+    margin: 1.2rem 0;
+    color: rgb(177, 177, 177);
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        margin: 2rem;
+    }
+    .navbar .list {
+        display: none;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-left .hero-image {
+        margin-top: 8rem;
+        width: 22rem;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .hero .hero-right {
+        text-align: center;
+    }
+    .hero .hero-right h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .hero .hero-right .contact-email {
+        display: none;
+    }
+    .connecting-wrapper {
+        margin-top: 20rem;
+    }
+    .connecting .connecting-right .connecting-img {
+        width: 100%;
+        height: 70%;
+    }
+    .connecting .connecting-left .connecting-stats .stat h4 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .connecting .connecting-left .connecting-stats .stat p {
+        font-size: .9rem;
+    }
+    .care-title {
+        width: 300px;
+        margin: auto;
+    }
+    .care-container {
+        margin-top: 64rem;
+    }
+    .care-card {
+        flex-direction: column;
+        text-align: center;
+        margin: 3rem;
+    }
+    .img img {
+        width: 350px;
+        margin-top: -8rem;
+    }
+    .team-top {
+        margin: 4rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .team-card-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .team-card {
+        height: 628px;
+        width: 392px;
+    }
+    .team-name {
+        margin: 3rem;
+    }
+    .team-card img {
+        width: 300px;
+    }
+    .footer-logo {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .footer-links-container {
+        flex-direction: column;
+        margin: 1rem;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .footer-products,
+    .footer-features,
+    .footer-resources,
+    .footer-company,
+    .footer-fav {
+        width: 100vw;
+        text-align: center;
+    }
+}
